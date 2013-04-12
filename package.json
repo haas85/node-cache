@@ -1,0 +1,29 @@
+{
+  "author": {
+    "name": "Iñigo Gonzalez Vazquez",
+    "nickname": "haas85",
+    "site": "http://twitter.com/haas85"},
+  "name": "node-cache",
+  "description": "Memcache system for node js",
+  "homepage": "http://github.com/haas85/node-cache",
+  "repository" : {
+    "type" : "git",
+    "url" : "http://github.com/haas85/node-cache.git"
+  },
+  "version": "1.0.0",
+  "keywords": [ "cache", "javascript" ],
+  "license": "MIT",
+  "main": "./package/node-cache",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-jasmine": "*"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
