@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON "package.json"
 
     src:
-      file: 'cache'
+      file: 'ncache'
 
     resources:
       src: ['src/<%= src.file %>.coffee']

@@ -3,17 +3,17 @@
     "name": "Iñigo Gonzalez Vazquez",
     "nickname": "haas85",
     "site": "http://twitter.com/haas85"},
-  "name": "node-cache",
+  "name": "ncache",
   "description": "Memcache system for node js",
   "homepage": "http://github.com/haas85/node-cache",
   "repository" : {
     "type" : "git",
     "url" : "http://github.com/haas85/node-cache.git"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [ "cache", "javascript" ],
   "license": "MIT",
-  "main": "./package/node-cache",
+  "main": "./package/ncache",
   "dependencies": {
   },
   "devDependencies": {
