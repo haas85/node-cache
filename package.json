@@ -10,7 +10,7 @@
     "type" : "git",
     "url" : "http://github.com/haas85/node-cache.git"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [ "cache", "javascript" ],
   "license": "MIT",
   "main": "./package/ncache",
