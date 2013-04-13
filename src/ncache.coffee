@@ -28,4 +28,6 @@ _CACHE = {}
   else
     exports.Cache = Cache
 
+  module.exports = Cache if module? and module.exports?
+
 ) this

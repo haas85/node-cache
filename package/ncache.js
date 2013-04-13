@@ -1,4 +1,4 @@
-/* node-cache v1.0.0 - 2013/04/13
+/* ncache v1.0.1 - 2013/04/13
 Memcache system for node js - http://github.com/haas85/node-cache
 Copyright (c) 2013 Iñigo Gonzalez Vazquez(haas85) - Under MIT License */
-(function(){var e;e={};(function(t){var n,u,r,i;i=function(t,n,u){var r;if(e[t]!=null){clearTimeout(e[t].timeout)}r=function(){return delete e[t]};return e[t]={value:n,timeout:setTimeout(r,u*1e3)}};u=function(t){if(e[t]!=null){return e[t].value}else{return null}};r=function(t){if(e[t]!=null){clearTimeout(e[t].timeout);delete e[t];return true}else{return false}};n={set:i,get:u,remove:r};if(typeof define==="function"&&define.amd){return define(function(){return n})}else{return t.Cache=n}})(this)}).call(this);
+(function(){var e;e={};(function(t){var u,n,l,i;i=function(t,u,n){var l;if(e[t]!=null){clearTimeout(e[t].timeout)}l=function(){return delete e[t]};return e[t]={value:u,timeout:setTimeout(l,n*1e3)}};n=function(t){if(e[t]!=null){return e[t].value}else{return null}};l=function(t){if(e[t]!=null){clearTimeout(e[t].timeout);delete e[t];return true}else{return false}};u={set:i,get:n,remove:l};if(typeof define==="function"&&define.amd){define(function(){return u})}else{t.Cache=u}if(typeof module!=="undefined"&&module!==null&&module.exports!=null){return module.exports=u}})(this)}).call(this);

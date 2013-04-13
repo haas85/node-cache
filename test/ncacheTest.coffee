@@ -28,4 +28,4 @@ describe "node-cache", ->
 
     getter = () ->expect(Cache.get 5).toEqual null
 
-    setTimeout getter, 25000
+    setTimeout getter, 2500
