@@ -1,4 +1,4 @@
-describe "Node Cache", ->
+describe "node-cache", ->
 
   it "is healthy", ->
     expect(Cache).toBeTruthy()
@@ -20,3 +20,12 @@ describe "Node Cache", ->
 
     expect(Cache.get 1).toEqual null
 
+  it "element expires", ->
+
+    Cache.set 5, "FOO5", 2
+
+    expect(Cache.get 5).toEqual "FOO5"
+
+    getter = () ->expect(Cache.get 5).toEqual null
+
+    setTimeout getter, 25000
