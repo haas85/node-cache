@@ -3,7 +3,7 @@ module.exports = (grunt) ->
     pkg: grunt.file.readJSON "package.json"
 
     src:
-      file: 'node-cache'
+      file: 'cache'
 
     resources:
       src: ['src/<%= src.file %>.coffee']
@@ -16,21 +16,21 @@ module.exports = (grunt) ->
     coffee:
       src:
         files:
-          'src/<%= src.file %>.js': '<%= resources.src %>'
-          'test/<%= src.file %>.js': '<%= resources.test %>'
+          'build/<%= src.file %>.js': '<%= resources.src %>'
+          'build/<%= src.file %>Test.js': '<%= resources.test %>'
 
     uglify:
       options:
         compress: false
         banner: '<%= resources.banner %>'
       package:
-        files: 'package/<%=src.file%>.js': 'src/<%= src.file %>.js'
+        files: 'package/<%=src.file%>.js': 'build/<%= src.file %>.js'
 
     jasmine:
         pivotal:
           src: 'package/<%= src.file %>.js'
           options:
-            specs: 'test/<%= src.file %>.js',
+            specs: 'build/<%= src.file %>Test.js',
 
     watch:
       src:
