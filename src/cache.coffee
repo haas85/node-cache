@@ -10,8 +10,13 @@ _CACHE = {}
 
   _get = (key) -> if _CACHE[key]? then _CACHE[key].value else null
 
-  _remove = () ->
-    "TODO"
+  _remove = (key) ->
+    if _CACHE[key]?
+      clearTimeout(_CACHE[key].timeout)
+      delete _CACHE[key]
+      true
+    else
+      false
 
   Cache =
     set: _set
