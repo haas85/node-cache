@@ -25,7 +25,7 @@ Usage:
     Cache.set(foo.id, foo, 25);         /* foo will be in memcache for 25 seconds, and we will acces it with its id*/
 
 <a name="get" />
-### set(key)
+### get(key)
 Returns the value stored with the key if exists, if not it will return null
 
 Usage:
